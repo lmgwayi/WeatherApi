@@ -7,7 +7,7 @@ const details = document.querySelector('.weatherDetails')
 
 search.addEventListener('click', () => {
 
-    const APIKey = '21452fc695c401b2dbf1b432203486a7';
+    const APIKey = 'fd3e6bedc8f3073466c804601bc4614a';
     const city = document.querySelector('.search-box input').value;
       
     details.style.display = 'none';
@@ -51,11 +51,14 @@ search.addEventListener('click', () => {
                     break;
 
                 case 'Clouds':
-                    image.src = 'SCD.png';
+                    image.src = 'Cloudy.png';
                     break;
 
                 case 'Haze':
                     image.src = 'overcast.png';
+
+                case 'Fog':
+                    image.src = 'Fog.png'
                     break;
 
                 default:

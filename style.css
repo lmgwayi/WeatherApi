@@ -6,9 +6,6 @@
     box-sizing: border-box;
 }
 
-/* h1 {
-    justify-content: center;
-} */
 
 body{
     height: 100vh;
@@ -18,11 +15,15 @@ body{
     background-color: rgb(252, 252, 252);
 }
 
+.text-center{
+    text-align: center;
+}
+
 .container{
     position: relative;
     width: 400px;
     height: 105px;
-    background: #08d464;
+    background: #c6a264;
     padding: 28px 32px;
     overflow: hidden;
     border-radius: 18px;
