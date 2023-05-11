@@ -65,6 +65,18 @@ search.addEventListener('click', () => {
                     image.src = '';
             }
 
+            let C = `${parent(json.main.temp)}`
+
+            if (C<16){
+                outfit.innerHTML ="Outfit Suggestion: It's cold, keep warm";
+            }
+            else if (C<=16 && C<=21){
+                outfit.innerHTML = "Outfit Suggestion: It's wam, wear your denim and t-shirt";
+            }
+            else if (C>21){
+                outfit.innerHTML = "Outfit Suggestion: It's hot, rock your shots and glasses";
+            }
+
             temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
             description.innerHTML = `${json.weather[0].description}`;
             humidity.innerHTML = `${json.main.humidity}%`;
